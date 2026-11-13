@@ -29,7 +29,7 @@ stan_data_PMMoV <- list(
 
 # 3. MCMCサンプリングの実行
 fit <- stan(
-  file = "Normal_Distribution.stan",
+  file = "Bayesian_Modeling_Normal_Distribution.stan", "Bayesian_Modeling_Student-t_3,stan"
   data = stan_data_sars, #stan_data_PMMoV
   chains = 4,
   iter = 4000,
