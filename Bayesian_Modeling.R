@@ -7,7 +7,7 @@ library(dplyr)
 library(rstan)
 library(bayesplot)
 
-df <- read.csv("RealWorld_Application_SARS_PMMoV.csv")
+df <- read.csv("Data_RealWorld_Application_SARS_PMMoV.csv")
 
 df_ratio <- df %>% filter(!is.na(SARS_Ratio))
 df_ratio_PMMoV <- df %>% filter(!is.na(PMMoV_Ratio))
